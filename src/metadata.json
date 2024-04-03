@@ -11,7 +11,7 @@
         "Description[es]": "Aplica un filtro de color",
         "Description[ca]": "Aplica un filtre de color",
         "Icon": "preferences-system-windows",
-        "Id": "rgbfilter",
+        "Id": "kwin-rgbfilter",
         "License": "GPL",
         "Name": "RGB Filter",
         "Name[es]": "Filtro RGB",
