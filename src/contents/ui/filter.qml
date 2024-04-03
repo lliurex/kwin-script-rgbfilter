@@ -9,7 +9,7 @@ import org.kde.plasma.core 2.0 as PlasmaCore;
 import org.kde.kwin 2.0;
 
 PlasmaCore.Dialog {
-    id: strip
+    id: rgbfilter
     location: PlasmaCore.Types.Floating
     visible: true
     flags: Qt.X11BypassWindowManagerHint | Qt.FramelessWindowHint | Qt.WA_TranslucentBackground
@@ -17,8 +17,8 @@ PlasmaCore.Dialog {
     height: Screen.height
     outputOnly: true
     Component.onCompleted: {
-        strip.show();
-        KWin.registerWindow(strip);
+        rgbfilter.show();
+        KWin.registerWindow(rgbfilter);
     }
 
 }
