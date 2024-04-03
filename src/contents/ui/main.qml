@@ -17,11 +17,11 @@ Item {
     }
 
     property color bkgColor: "black"
-    property int stripOpacity: 15
+    property int filterOpacity: 15
     property color rColor: "black"
     property bool show: true
 
-    function reloadStrip(show=true){
+    function reloadFilter(show=true){
         mainItemLoader.sourceComponent=undefined;
         mainItemLoader.source="";
         root.show=show
@@ -29,8 +29,8 @@ Item {
     
     function readConfig(){
         bkgColor= KWin.readConfig("BackgroundColor",Qt.rgba(0,0,1,0.1));
-        stripOpacity= KWin.readConfig("StripOpacity",20);
-        rColor=Qt.rgba(bkgColor.r,bkgColor.g,bkgColor.b,stripOpacity/100);
+        filterOpacity= KWin.readConfig("Opacity",20);
+        rColor=Qt.rgba(bkgColor.r,bkgColor.g,bkgColor.b,filterOpacity/100);
     }
 
     function showFilter(){

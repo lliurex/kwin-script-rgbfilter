@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MouseStripConfig</class>
+ <class>RgbFilterConfig</class>
  <widget class="QWidget" name="RgbFilterConfig">
   <property name="geometry">
    <rect>
@@ -14,7 +14,7 @@
    <item row="0" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Strip color:</string>
+      <string>Filter color:</string>
      </property>
     </widget>
    </item>
@@ -33,7 +33,7 @@
       </widget>
      </item>
    <item row="1" column="1">
-      <widget class="QSpinBox" name="kcfg_StripOpacity">
+      <widget class="QSpinBox" name="kcfg_Opacity">
        <property name="suffix">
         <string>%</string>
        </property>
@@ -41,7 +41,7 @@
         <number>0</number>
        </property>
        <property name="maximum">
-        <number>50</number>
+        <number>75</number>
        </property>
       </widget>
      </item>
