@@ -55,7 +55,7 @@ Item {
     }
 
     Component.onCompleted: {
-		showFiter();
+		showFilter();
         KWin.registerShortcut("Toggle RGB Filter", "Toggle RGB Filter", "Ctrl+Meta+R", function() {  reloadFilter(!show); }); 
     }
 }
