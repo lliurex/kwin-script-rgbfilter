@@ -7,8 +7,8 @@ Clone the repo and install the content of src/ with kpackagetool
 
 ```
 cd /tmp
-git clone https://github.com/lliurex/kwin-rgbfilter
-cd kwin-rgbfilter
+git clone https://github.com/lliurex/kwin-script-rgbfilter
+cd kwin-script-rgbfilter
 kpackagetool5 --install src/
 ````
 
