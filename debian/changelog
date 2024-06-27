@@ -1,3 +1,9 @@
+kwin-script-rgbfilter (0.9.2) jammy; urgency=medium
+
+  * Renamed
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 27 Jun 2024 08:30:27 +0200
+
 kwin-rgbfilter (0.9.1) jammy; urgency=medium
 
   * Initial release. 
