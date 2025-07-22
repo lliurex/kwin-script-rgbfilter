@@ -17,7 +17,7 @@ Item {
     }
 
     property color bkgColor: "black"
-    property int filterOpacity: 15
+    property double filterOpacity: 15
     property color rColor: "black"
     property bool show: true
 
@@ -28,9 +28,9 @@ Item {
     }
     
     function readConfig(){
-        bkgColor= KWin.readConfig("BackgroundColor",Qt.rgba(0,0,1,0.1));
-        filterOpacity= KWin.readConfig("Opacity",20);
-        rColor=Qt.rgba(bkgColor.r,bkgColor.g,bkgColor.b,filterOpacity/100);
+        bkgColor= KWin.readConfig("BackgroundColor",Qt.rgba(0,0,1,1));
+        filterOpacity= KWin.readConfig("Opacity",20)/100;
+        rColor=Qt.rgba(bkgColor.r,bkgColor.g,bkgColor.b,filterOpacity);
     }
 
     function showFilter(){
@@ -39,6 +39,7 @@ Item {
            readConfig();
            mainItemLoader.source = "filter.qml";
            rgbFilter=mainItemLoader.item;
+           rgbFilter.opacity=filterOpacity;
            rgbFilter.color=root.rColor;
        }
     }
